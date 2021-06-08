@@ -51,7 +51,6 @@ class ResConfigSettings(models.TransientModel):
         res['highlight_style'] = self._get_active_highlight_style()
         return res
 
-    @api.multi
     def set_values(self):
         """Override to update active highlight style."""
         super(ResConfigSettings, self).set_values()
